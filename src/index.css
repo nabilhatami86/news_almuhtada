@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui; /* default font */
+  --font-headline: "Playfair Display", serif;
+  --color-primary: #fafaf9;
+}
