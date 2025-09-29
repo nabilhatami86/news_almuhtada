@@ -15,12 +15,6 @@ import {
   User,
   Calendar,
   TrendingUp,
-  LayoutDashboard,
-  PlusCircle,
-  Award,
-  BookOpen,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react";
 import Sidebar from "../../ui/components-admin/sidebar";
 
@@ -144,7 +138,6 @@ const lastNews = [
 ];
 
 const Home: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const totalViews = viewsData.reduce((sum, item) => sum + item.views, 0);
   const avgViews = Math.round(totalViews / viewsData.length);
 

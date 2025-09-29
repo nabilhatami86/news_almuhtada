@@ -1,16 +1,5 @@
 import React, { useState } from "react";
-import {
-  Plus,
-  User,
-  Trash2,
-  Pencil,
-  X,
-  Users,
-  Mail,
-  Shield,
-  Search,
-  Filter,
-} from "lucide-react";
+import { Plus, Trash2, Pencil, X, Users, Search, Filter } from "lucide-react";
 import Sidebar from "../../ui/components-admin/sidebar";
 
 type Role = "admin" | "editor" | "viewer" | "customer" | "vendor";
