@@ -1,19 +1,7 @@
-import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/image/logo.png"; // ganti sesuai path logo
 
 const Footer = () => {
-  const location = useLocation();
-
-  const showProfilFooter = [
-    "/tentang-pesantren",
-    "/program-pengajar",
-    "/pendaftaran",
-    "/prestasi-mahasantri",
-    "/publikasi-mahasantri",
-    "/griya-quran",
-  ].includes(location.pathname);
-
   // mapping route untuk kategori
   const kategoriRoutes: Record<string, string> = {
     "Doa Harian": "/kategori/doa-harian",
