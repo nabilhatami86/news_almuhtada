@@ -1,21 +1,14 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   TrendingUp,
   Clock,
-  Eye,
   ArrowRight,
   Star,
   Zap,
   Flame as Fire,
-  Calendar,
-  Tag,
   Users,
-  MessageCircle,
-  Share2,
-  Bookmark,
   ChevronRight,
   Search,
-  Filter,
 } from "lucide-react";
 import CardHeadliner from "../ui/components-global/card-headliner";
 import TrendingList from "../ui/components-global/trending-list";

@@ -14,9 +14,7 @@ import {
   Settings,
   ChevronLeft,
   ChevronRight,
-  Home,
   User,
-  Shield,
   HelpCircle,
 } from "lucide-react";
 import Logo from "../../assets/image/logo1.png";

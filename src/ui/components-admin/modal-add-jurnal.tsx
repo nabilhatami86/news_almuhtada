@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   X,
-  Plus,
   BookOpen,
   Users,
   Calendar,
@@ -11,7 +10,6 @@ import {
   AlertCircle,
   Eye,
   EyeOff,
-  Sparkles,
   FileText,
 } from "lucide-react";
 

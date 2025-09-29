@@ -1,4 +1,3 @@
-import React from "react";
 import CardHeadliner from "../ui/components-global/card-headliner";
 import TrendingList from "../ui/components-global/trending-list";
 import { featuredArticles, trendingNews } from "../assets/data/dummy";
