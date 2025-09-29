@@ -1,4 +1,3 @@
-import React from "react";
 import { populer, achievements } from "../../assets/data/dummy";
 import ArtikelPopuler from "../../ui/components-global/artikel-populer";
 
@@ -20,17 +19,19 @@ const PrestasiMahasantri = () => {
           {/* Konten Prestasi */}
           <div className="space-y-10">
             {achievements.map((group) => (
-              <div key={group.year}>
+              <div key={group.years}>
                 <div className="border-b">
                   <h2 className="text-2xl font-semibold text-emerald-600 mb-4">
-                    Tahun {group.year}
+                    Tahun {group.years}
                   </h2>
                 </div>
                 <div className="bg-white rounded-2xl p-6">
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    {group.items.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
+                    {(group.name ? [group.name] : []).map(
+                      (item: string, idx: number) => (
+                        <li key={idx}>{item}</li>
+                      )
+                    )}
                   </ul>
                 </div>
               </div>

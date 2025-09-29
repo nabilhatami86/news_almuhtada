@@ -51,7 +51,6 @@ const AdminAchievements: React.FC = () => {
   const [showSuccess, setShowSuccess] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
-  const [showFilters, setShowFilters] = useState(false);
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -170,15 +169,6 @@ const AdminAchievements: React.FC = () => {
   const availableYears = [...new Set(achievements.map((a) => a.years))].sort(
     (a, b) => b - a
   );
-
-  // Statistics
-  const stats = {
-    total: achievements.length,
-    thisYear: achievements.filter((a) => a.years === new Date().getFullYear())
-      .length,
-    students: new Set(achievements.map((a) => a.name)).size,
-    topYear: availableYears[0] || new Date().getFullYear(),
-  };
 
   // Get achievement icon based on title
   const getAchievementIcon = (title: string) => {

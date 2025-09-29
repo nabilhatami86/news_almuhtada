@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Plus, Newspaper, Image as ImageIcon } from "lucide-react";
+import { Plus, Newspaper } from "lucide-react";
 import Sidebar from "../../ui/components-admin/sidebar";
 import NewsModal from "../../ui/components-admin/modal-add-news";
 import NewsTable from "../../ui/components-admin/table-news";
@@ -51,7 +51,7 @@ const InputAddNews = () => {
   const [lastAction, setLastAction] = useState<string>("");
 
   const [form, setForm] = useState({ title: "", category: "", content: "" });
-  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [_imageFile, setImageFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string>("");
 
   // Success toast effect
@@ -158,15 +158,6 @@ const InputAddNews = () => {
 
   // Get unique categories
   const availableCategories = [...new Set(articles.map((a) => a.category))];
-
-  // Statistics
-  const stats = {
-    total: articles.length,
-    published: articles.filter((a) => a.status === "published").length,
-    drafts: articles.filter((a) => a.status === "draft").length,
-
-    featured: articles.filter((a) => a.featured).length,
-  };
 
   // Get category color
   const getCategoryColor = (category: string) => {

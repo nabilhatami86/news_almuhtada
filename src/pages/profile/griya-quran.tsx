@@ -1,5 +1,3 @@
-import React from "react";
-
 const GriyaQuran = () => {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">

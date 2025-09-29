@@ -1,4 +1,3 @@
-import React from "react";
 import { populer } from "../../assets/data/dummy";
 import ArtikelPopuler from "../../ui/components-global/artikel-populer";
 

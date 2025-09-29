@@ -4,19 +4,14 @@ import {
   BookOpen,
   Trash2,
   Pencil,
-  Link2,
   Search,
   LayoutGrid,
   List,
   Calendar,
   Users,
-  FileText,
   ExternalLink,
-  TrendingUp,
-  Eye,
   Download,
   Library,
-  Sparkles,
   CheckCircle,
 } from "lucide-react";
 import Sidebar from "../../ui/components-admin/sidebar";
@@ -141,17 +136,6 @@ const AdminPublications: React.FC = () => {
   const availableYears = Array.from(
     new Set(publications.map((pub) => pub.year))
   ).sort((a, b) => b - a);
-
-  // Statistics
-  const stats = {
-    total: publications.length,
-    thisYear: publications.filter((p) => p.year === new Date().getFullYear())
-      .length,
-    authors: new Set(publications.map((p) => p.authors)).size,
-    recentYears: publications.filter(
-      (p) => p.year >= new Date().getFullYear() - 2
-    ).length,
-  };
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
